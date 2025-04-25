@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-700 mt-16">
+    <footer className="bg-gray-100 text-gray-700">
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
         <div>
           <h2 className="text-xl font-[400]">

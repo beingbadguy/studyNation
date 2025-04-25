@@ -6,8 +6,16 @@ import { motion } from "framer-motion";
 export default function HomePage() {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
-    <div className="min-h-[60vh] flex items-center justify-center flex-col relative">
-      <div className="my-10 animate-pulse">
+    <div
+      className="min-h-[80vh] flex items-center justify-center flex-col relative"
+      style={{
+        backgroundColor: "#fff",
+        backgroundImage:
+          'url("https://www.transparenttextures.com/patterns/cubes.png")',
+        backgroundRepeat: "repeat",
+      }}
+    >
+      <div className="my-10 animate-pulse bg-white">
         <svg
           width="200"
           height="200"
@@ -44,7 +52,7 @@ export default function HomePage() {
           </defs>{" "}
         </svg>
       </div>
-      <h1 className="text-2xl md:text-4xl my-3 text-center">
+      <h1 className="text-2xl md:text-4xl my-3 text-center bg-white">
         Master CBSE. Smarter. Faster. Together.
       </h1>
       <p className=" text-sm md:text-lg text-center  md:w-[80%] lg:w-[50%]">
@@ -52,9 +60,9 @@ export default function HomePage() {
         years of papers, daily quizzes, real-time doubt support, assignments,
         results, and more. Study smarter, not harder.
       </p>
-      <div className="my-4">
+      <div className="my-4 bg-white">
         <motion.div
-          className="relative border border-green-500 cursor-pointer z-10 text-black font-bold py-2 px-4 rounded overflow-hidden hover:text-white transition-all duration-300 ease-in-out"
+          className="relative border border-green-500 cursor-pointer z-10 text-black font-bold py-2 px-4 rounded-3xl overflow-hidden hover:text-white transition-all duration-300 ease-in-out"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -71,9 +79,12 @@ export default function HomePage() {
           />
 
           {/* Button text */}
-          <span className="relative z-10 hover:text-white font-[400]">Get Started</span>
+          <span className="relative z-10 hover:text-white font-[400]">
+            Get Started
+          </span>
         </motion.div>
       </div>
+
       <div className="size-10 absolute hidden md:block left-2 md:left-10">
         <svg
           color="#2FA52D"
