@@ -35,7 +35,7 @@ const RootHeader = () => {
         <TiFlash size={18} className="text-yellow-500" />
       </div>
 
-      <nav className="flex items-center justify-between w-full px-2 py-2  border-b-1 border-gray-100">
+      <nav className="flex items-center justify-between w-full px-2 py-2  border-b-1 border-gray-300">
         <div className="font-[400] text-xl">
           Edu<span className="text-green-500">Nation</span>
         </div>
@@ -102,12 +102,21 @@ const RootHeader = () => {
           </ul>
         </div>
         <div className="md:flex items-center gap-4 hidden ">
-          <div className="border border-green-700 px-4 py-2 rounded-4xl cursor-pointer text-green-700 ">
+          <div
+            className="border border-green-700 px-4 py-2 rounded-4xl cursor-pointer text-green-700 "
+            onClick={() => {
+              router.push("/login");
+            }}
+          >
             Login
           </div>
         </div>
         <div className="text-2xl  md:hidden flex items-center gap-4 ">
-          <FiUser />
+          <FiUser
+            onClick={() => {
+              router.push("/login");
+            }}
+          />
           <TfiAlignRight onClick={() => setOpen(!open)} />
         </div>
       </nav>

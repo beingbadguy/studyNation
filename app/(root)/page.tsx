@@ -8,12 +8,12 @@ export default function HomePage() {
   return (
     <div
       className="min-h-[80vh] flex items-center justify-center flex-col relative"
-      style={{
-        backgroundColor: "#fff",
-        backgroundImage:
-          'url("https://www.transparenttextures.com/patterns/cubes.png")',
-        backgroundRepeat: "repeat",
-      }}
+      // style={{
+      //   backgroundColor: "#fff",
+      //   backgroundImage:
+      //     'url("https://www.transparenttextures.com/patterns/cubes.png")',
+      //   backgroundRepeat: "repeat",
+      // }}
     >
       <div className="my-10 animate-pulse bg-white">
         <svg
